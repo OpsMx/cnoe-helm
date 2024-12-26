@@ -5,7 +5,7 @@ metadata:
 spec:
   destination:
     name: 'helm-app'
-    namespace: nav-cnoe-helm-app
+    namespace: argocd
     server: 'https://kubernetes.default.svc'
   source:
     path: 'cnoe-charts'
