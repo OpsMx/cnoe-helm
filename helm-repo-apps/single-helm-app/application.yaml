@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: sample-helm-app
+spec:
+  destination:
+    name: 'helm-app'
+    namespace: default
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: 'cnoe-charts'
+    repoURL: 'https://opsmx.github.io/cnoe-helm'
+    targetRevision: 0.1.0
+    chart: cnoe-charts
+  sources: []
+  project: default
