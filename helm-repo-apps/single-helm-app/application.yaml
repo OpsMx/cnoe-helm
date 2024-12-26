@@ -12,5 +12,5 @@ spec:
     repoURL: 'https://opsmx.github.io/cnoe-helm'
     targetRevision: 0.1.0
     chart: cnoe-charts
-  project: my-app-project  # Use the new project here
+  project: demo  # Use the new project here
 
